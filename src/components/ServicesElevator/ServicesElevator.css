@@ -1,0 +1,25 @@
+.services-elevator {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.elevator-inner {
+  position: absolute;
+  top: 0;
+  animation: slide 120s linear infinite;
+}
+
+.text-line {
+  margin-bottom: 60px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}

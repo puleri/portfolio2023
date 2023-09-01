@@ -1,0 +1,72 @@
+.hamburger-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 51;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+.open .bar:nth-child(1) {
+  background-color: var(--main-color);
+  transform: rotateZ(45deg) translateY(11px);
+}
+
+.open .bar:nth-child(2) {
+  background-color: var(--main-color);
+  transform: scale(0);
+}
+
+.open .bar:nth-child(3) {
+  background-color: var(--main-color);
+  transform: rotateZ(-45deg) translateY(-11px);;
+}
+
+
+.hamburger-overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: left 0.3s ease-in-out;
+  z-index: 50;
+}
+
+.hamburger-overlay.open {
+  left: 0;
+}
+
+.hamburger-overlay nav {
+  width: 70%; /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-overlay a {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.hamburger-overlay a:hover {
+  color: #f00;
+}

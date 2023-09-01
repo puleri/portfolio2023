@@ -1,0 +1,153 @@
+/* HERO SECTION */
+.hero {
+    position: relative;
+    display: flex;
+
+    .titleCard {
+        width: 50vw;
+
+        .meetme {
+            width: 32vw;
+            margin-top: calc(300px - 20vw); /* The margin grows as the viewport width decreases */
+            margin-right: -25%;
+        }
+
+        .mission {
+            text-align: center;
+            font-weight: 900;
+            line-height: 1.8vw;
+            font-size: .99vw;
+            width: 20vw;
+            margin-top: 100px; /* The margin grows as the viewport width decreases */
+            font-family: 'Reem Kufi Variable', sans-serif;
+        }
+    }
+    
+    .servicesCard {
+        position: relative;
+        overflow: hidden;
+        color: var(--main-color);
+        padding-left: 40px;
+        font-size: 4.1vw;
+        font-weight: 100;
+        width: 50vw;
+        height: 100vh;
+        background: url('../../assets/photos/paper.jpg');
+        background-image: url('../../assets/photos/paper.jpg');
+        background-size: cover;
+    }
+
+}
+/* HERO SECTION END*/
+
+/*  PORTFOLIO GRID SECTION */
+.portfolioGrid {
+    background-color: #A5A29B;
+    min-height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 40px 6vw;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    }
+
+.portfolioGrid > * {
+    border-radius: 40px;
+}
+
+.portraitVidContainer {
+    position: relative;
+    width: 100%;
+  }
+    
+.p1 {
+    background-image: url('../../assets/photos/wedding.png');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    grid-area: 1 / 1 / 2 / 3; 
+}
+.p1 > * {
+    max-width: 200px;
+    height: auto;
+}
+
+.p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/photos/space.png');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+            grid-area: 1 / 3 / 2 / 4; 
+}
+.p2 > * {
+    max-width: 200px;
+    height: auto;
+}
+
+.p3 {
+    position: relative;
+    overflow: hidden;
+    background-image: url('../../assets/photos/kaiser.png');
+    background-size: cover;
+    grid-area: 2 / 1 / 4 / 2; 
+        & > * {
+            width: 100%;
+            height:100%;
+        }
+}
+
+.p4 {
+        background-image: url('../../assets/photos/desert.png');
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        grid-area: 2 / 2 / 3 / 3; 
+        & > * {
+
+            width: 100%;
+        }
+}
+
+.p5 {
+        position: relative;
+        overflow: hidden;
+        background-image: url('../../assets/photos/extrahop.png');
+        background-size: cover;
+        grid-area: 3 / 2 / 4 / 3; 
+        & > * {
+            width: 100%;
+        }
+}
+
+.p6 {
+        background-image: url('../../assets/photos/lwc.png');
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        grid-area: 2 / 3 / 4 / 4; 
+}
+/*  PORTFOLIO GRID SECTION END */
+
+/* CAROUSEL SECTION */
+
+.cSectionContainer {
+    background-color: var(--black);
+    min-height: 100vh;
+    color: var(--main-color);
+    padding: 8vw 15vw;
+
+    .bio {
+        font-size: 2vw;
+        text-align: center;
+        font-weight: 200;
+        line-height: 4vw;
+    }
+
+    .bracket {
+        width: 70vw;
+    }
+}

@@ -1,0 +1,16 @@
+.handwritten {
+  font-family: 'Square Peg', sans-serif;
+}
+
+.serif {
+  font-family: 'Reem Kufi Variable', sans-serif;
+}
+
+.row {
+  display: flex;
+}
+
+.center {
+  width: 100%;
+  justify-content: center;
+}
