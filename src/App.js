@@ -6,6 +6,7 @@ import './App.css';
 import Index from './components';
 import Navbar from './components/NavBar/NavBar';
 import Homepage from './components/Homepage/Homepage';
+import Contact from './components/Contact/Contact';
 
 
 
@@ -18,6 +19,7 @@ function App() {
          <Routes>
            
            <Route path="/" element={<Homepage/>}></Route>
+           <Route path="/contact" element={<Contact/>}></Route>
 
 
          </Routes>

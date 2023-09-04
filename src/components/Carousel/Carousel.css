@@ -122,6 +122,29 @@
   .carousel-navigation button:not(:last-child) {
     margin-right: 10px;
   }
+
+  .experience-company {
+    font-weight: 300;
+    font-size: 2vw;
+    line-height: 1em;
+  }
+  .company-left {
+    width: 27vw;
+  }
+  .company-right {
+    width: 24vw;
+  }
+  .experience-title {
+    font-weight: 300;
+    font-size: 1.6vw;
+    line-height: 1em;
+    margin-bottom: 1.8vw;
+  }
+  .experience-desc {
+    font-size: 1.2vw;
+    font-weight: 100;
+    line-height: 2em;
+  }
   
   /* Additional styling as needed */
   

@@ -10,10 +10,9 @@ const HamburgerButton = () => {
 
   return (
     <div>
-      <div className={`hamburger-overlay ${isOpen ? 'open' : ''}`}>
+      <div className={`serif hamburger-overlay ${isOpen ? 'open' : ''}`}>
         <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
+          <a onClick={()=>setIsOpen(!isOpen)} href="/">Home</a>
           <a href="/contact">Contact</a>
         </nav>
       </div>

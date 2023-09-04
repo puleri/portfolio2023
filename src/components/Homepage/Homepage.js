@@ -1,22 +1,39 @@
 import Navbar from "../NavBar/NavBar";
 import ServicesElevator from "../ServicesElevator/ServicesElevator";
 import css from './Homepage.module.css'
+import '../ImgCur/ImgCur.css'
 
 import earth from '../../assets/gifs/earth.gif'
 import bracket from '../../assets/photos/bracket.svg'
+import stroke from '../../assets/photos/stroke.png'
+
 
 import meetme from '../../assets/photos/meetMe.svg'
 import ExperienceCarousel from "../ExperienceCarousel/ExperienceCarousel";
 import Carousel from '../Carousel/Carousel'
+import Footer from "../Footer/Footer";
+import TextDescrambler from "../TextDescrambler/TextDescrambler";
+import ImgCur from "../ImgCur/ImgCur";
+import { useState } from "react";
 
 function Homepage() {
+    const [hoveringMeet, setHoveringMeet] = useState(false)
+    const phrases = [
+        '',
+        `I'm Matt, a Software Engineer working remotely for <span class="extrahop-span">ExtraHop</span> on their website and digital tradeshow experiences in sunny Seattle, Washington.`
+      ];
     return (
         <>
             <section className={css.hero}>
                 <div className={css.titleCard}>
                     <Navbar />
                     <div className="row center">
-                        <img className={css.meetme} src={meetme} />
+                        <img id="meetmeImage"
+                         onMouseEnter={() => setHoveringMeet(true)}
+                         onMouseLeave={() => setHoveringMeet(false)}
+                         className={`${css.meetme} custom-cursor-target`} src={meetme} alt="Meet Me" />
+                        <ImgCur visible={hoveringMeet}/>
+
                     </div>
                     <div className="row center">
                         <p className={css.mission}>Crafting  Digital  Experiences:  Where  Software  Engineering  and  Design  Converge</p>
@@ -38,11 +55,13 @@ function Homepage() {
                 <div className={css.p6}/>
             </section>
 
-            <section className={css.cSectionContainer}>
-                <p className={css.bio}>Ignited by an unconventional journey from tarot cards to software engineering. With a knack for cross-functional collaboration, I blend code and creativity to craft accessible, high-performing websites. A problem solver at heart, I bridge technical and stakeholder realms, transforming visions into digital realities.</p>
+            <section id="about" name="about" className={css.cSectionContainer}>
+                <p className={css.bio}>
+                    <TextDescrambler phrases={phrases}/></p>
                 <img src={bracket} className={css.bracket}/>
                 <Carousel />
             </section>
+            <Footer />
         </>
     );
 }

@@ -28,3 +28,5 @@ INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (e
 2023.08.31 16:44:09 INFO  time: initialize in 0.83s[0m
 2023.08.31 16:44:14 WARN  Build server is not auto-connectable.[0m
 2023.08.31 16:44:14 WARN  no build tool detected in workspace '/Users/mattpuleri/Desktop/Freelance/portfolio'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Aug 31, 2023 7:00:43 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

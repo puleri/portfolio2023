@@ -10,6 +10,7 @@
             width: 32vw;
             margin-top: calc(300px - 20vw); /* The margin grows as the viewport width decreases */
             margin-right: -25%;
+            cursor: none;
         }
 
         .mission {
@@ -141,10 +142,12 @@
     padding: 8vw 15vw;
 
     .bio {
-        font-size: 2vw;
+        font-size: 2.2vw;
         text-align: center;
         font-weight: 200;
         line-height: 4vw;
+        min-height: 12vw;
+        max-height: 12vw;
     }
 
     .bracket {

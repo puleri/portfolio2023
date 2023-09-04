@@ -24,13 +24,13 @@ const Carousel = () => {
         },
         {
             title: 'Lennon Window Cleaning',
-            subtitle: 'Chief Technology Officer',
+            subtitle: 'Web Architect',
             description: 'Architected performant company technological infrastructure with a modern touch',
             image: eagle,
         },
         {
             title: 'Together In The Woods',
-            subtitle: 'Technology Director',
+            subtitle: 'Senior Front End Engineer',
             description: 'Crafted bespoke, dynamic website with React on the scalable foundation of GCP',
             image: wilderness,
         },
@@ -86,9 +86,9 @@ const Carousel = () => {
                     } ${currentIndex % 2 === 0 ? 'text-left' : 'text-right'}`}
             >
                 <div className={`text ${currentIndex % 2 === 0 ? 'title-left' : 'title-right'}`}>
-                    <h2>{currentItem.title}</h2>
-                    <h3>{currentItem.subtitle}</h3>
-                    <p>{currentItem.description}</p>
+                    <h2 className={`experience-company ${currentIndex % 2 === 0 ? 'company-left' : 'company-right'}`}>{currentItem.title}</h2>
+                    <h3 className='experience-title'>{currentItem.subtitle}</h3>
+                    <p className='experience-desc'>{currentItem.description}</p>
                 </div>
                 <div className={`image ${currentIndex % 2 === 0 ? 'img-right' : 'img-left'}`}>
                     <img src={currentItem.image} alt={currentItem.title} />

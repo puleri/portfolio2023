@@ -1,3 +1,4 @@
+
 .handwritten {
   font-family: 'Square Peg', sans-serif;
 }
@@ -13,4 +14,33 @@
 .center {
   width: 100%;
   justify-content: center;
+}
+
+.extrahop-span {
+  position: relative;
+  z-index: 3;
+}
+
+/* .extrahop-span::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  bottom: -5px;
+  left:0;
+  width: 100%;
+  height: 5px;
+  background-color: #2AA3A0;
+} */
+
+.extrahop-span::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: -1.6vw;
+  left:-1.8vw;
+  width: 13vw;
+  height: 4vw;
+  scale: .8;
+  background-image: url('./assets/photos/stroke.png');
+  background-size: cover;
 }
