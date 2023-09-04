@@ -1,5 +1,4 @@
 .hamburger-button {
-  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,10 +9,19 @@
   z-index: 51;
 }
 
+.absolute-ham {
+  position: absolute;
+  z-index: 51;
+}
+
+.fixed-ham {
+  position: fixed;
+}
+
 .bar {
   width: 30px;
   height: 4px;
-  background-color: #333;
+  background-color: var(--black);
   transition: transform 0.3s ease-in-out;
 }
 

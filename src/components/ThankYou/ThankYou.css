@@ -1,0 +1,48 @@
+.thank-you-div {
+    margin-top: 80px;
+}
+
+.thank-you {
+    color: var(--black);
+    font-weight: 200;
+    font-size: 6vw;
+    margin: 0;
+}
+
+.get-back {
+    text-align: center;
+    font-weight: 100;
+    width: 25vw;
+    font-size: 2vw;
+}
+
+.home-btn {
+    scale: .7;
+}
+
+@media (max-width: 1320px) {
+    .thank-you {
+        font-size: 12vw;
+        margin: 0;
+    }
+    .get-back {
+        font-size: 5vw;
+        width: 58vw;
+    }
+    
+
+  }
+@media (min-width: 900px) and (max-width: 1320px) {
+    .thank-you {
+        font-size: 10vw;
+        margin: 0;
+    }
+    .get-back {
+        font-size: 3.5vw;
+        width: 41vw;
+    }
+
+}
+
+
+  

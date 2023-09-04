@@ -16,7 +16,7 @@ const HamburgerButton = () => {
           <a href="/contact">Contact</a>
         </nav>
       </div>
-      <div className={`hamburger-button ${isOpen ? 'open' : ''}`} onClick={handleClick}>
+      <div className={`hamburger-button ${isOpen ? 'open fixed-ham' : 'absolute-ham'}`} onClick={handleClick}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>

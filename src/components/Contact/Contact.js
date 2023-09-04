@@ -75,9 +75,9 @@ const Contact = () => {
                     name="service" 
                     value={formData.service} onChange={handleInputChange} required                >
                     <option value=""></option>
-                    <option value="a job">a job</option>
-                    <option value="a project">a project</option>
-                    <option value="an opportunity">an opportunity</option>
+                    <option value="help with my website">help with my website</option>
+                    <option value="a full-time software engineer">a full-time software engineer</option>
+                    <option value="something not listed">something not listed</option>
                 </select>. Get in touch with me at <input
                         type="email"
                         placeholder="Your Email"

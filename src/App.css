@@ -44,3 +44,11 @@
   background-image: url('./assets/photos/stroke.png');
   background-size: cover;
 }
+
+.center-page {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -45,14 +45,25 @@ function Homepage() {
             </section>
 
             <section className={css.portfolioGrid}>
-                <div className={css.p1}/>
+                <div className={css.p1}>
+                    <div className={css.p1Child}>Wedding Websites</div>
+                </div>
                 <div className={css.p2}>
                     <img src={earth} />
+                    <div className={css.p2Child}>Cloud<br/>Services</div>
                 </div>
-                <div className={css.p3}/>
-                <div className={css.p4}/>
-                <div className={css.p5}/>
-                <div className={css.p6}/>
+                <div className={css.p3}>
+                    <div className={css.p3Child}>Business<br/>Apps</div>
+                </div>
+                <div className={css.p4}>
+                    <div className={css.p4Child}>Soltware<br/>Solutions</div>
+                </div>
+                <div className={css.p5}>
+                    <div className={css.p5Child}>Demand<br/>Generation</div>
+                </div>
+                <div className={css.p6}>
+                    <div className={css.p6Child}>Business<br/>Websites</div>
+                </div>
             </section>
 
             <section id="about" name="about" className={css.cSectionContainer}>
